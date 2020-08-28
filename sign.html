@@ -1,0 +1,219 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+	<title>ddd</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css" >
+
+</head>
+<body style="background-color: #faebd7;">
+
+      
+ <nav class="navbar navbar-expand-md bg-dark navbar-dark nav justify-content-end fixed-top">    
+
+      <a class="navbar-brand " href="#">Donald World</a>
+
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse " id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <a class="nav-link " href="get layd.html">Home</a>
+  <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact Us</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Gallery</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">blog</a>
+  </li>
+   </ul>
+  </div>
+     </nav>
+<br><br>
+<br><br>
+<div class="container">
+	
+
+	<form>
+  <div class="row">
+    <div class="col-lg-6">
+    	<label for="email">Student Name:</label>
+      <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+    </div>
+    <div class="col-lg-6">
+    	<label for="email">phone Number:</label>
+      <input type="phone" class="form-control" placeholder="Enter phone" name="phone">
+      </div>
+      <br><br><br><br>
+          <div class="col-lg-6">
+          	<label for="email">Email address:</label>
+      <input type="password" class="form-control" id="email" placeholder="Enter Email" name="email">
+       </div>
+          <div class="col-lg-6">
+          	<label for="email">password:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" name="pswd">
+    </div>
+
+    <div class="col-lg-6">
+          	<label for="email">Email address:</label>
+      <input type="file" class="form-control" id="email" placeholder="Enter Email" name="email">
+       </div>
+    <br><br><br><br>
+    <div class="col-lg-6">
+          	<label for="email">state(select):</label>
+      <select style="color: red" name="state" class="form-control">
+      <option  value="">Select State </option>
+      <option value="">Ekiti</option>
+      <option value="">Lagos</option>
+      <option value="">Akure</option>
+      <option value="">Edo</option>
+      <option value="">Ibadan</option>
+      <option value="">Imo</option>
+      <option value="">Benin</option>
+      </select>
+    </div>
+       <div class="container col-lg-6">
+  
+  <form>
+  	<p>Gender:</p>
+    <div class="form-check-inline">
+      <label class="form-check-label" for="radio1">
+        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Male
+      </label>
+    </div>
+    <div class="form-check-inline">
+      <label class="form-check-label" for="radio2">
+        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Female
+      </label>
+    </div>
+     
+  </form>
+</div>
+
+          </div>
+          
+          
+ <br><br>
+       
+</form>
+</div>
+<div class="container">
+  <h3>Toast Example</h3>
+  <p>A toast is like an alert box that is only shown for a couple of seconds when something happens (i.e. when a user clicks on a button, submits a form, etc.).</p>
+  <p>In this example, we use a button to show the toast message.</p>
+ 
+  <button type="button" class="btn btn-primary" id="myBtn">Show Toast</button>
+
+  <div class="toast">
+    <div class="toast-header">
+      Toast Header
+    </div>
+    <div class="toast-body">
+      Some text inside the toast body
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $('.toast').toast('show');
+  });
+});
+</script>
+<!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button>
+
+<!-- The Modal -->
+<div class=" modal fade" id="myModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Information</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <form class="form-row">
+       	<div class="col">
+       		<div class="form-group">
+       			<input type="text" name="name" class="form-control">
+       			
+       		</div>
+       		
+       	</div>
+       	<div class="col">
+       		<div class="form-group">
+       			<input type="email" name="name" class="form-control">
+       			
+       		</div>
+       		
+       	</div>
+       	<<button type="button" class="btn btn-primary">Submit</button>
+       	
+       </form>
+      </div>
+
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+<div class="container" >
+  <h2 style="border-bottom: 1px solid red; text-align: center;" >Select Subject</h2>
+ 
+<form>
+    <div class="form-check-inline col-sm-4">
+      <label class="form-check-label" for="check1">
+        <input type="checkbox" class="form-check-input" id="check1" name="vehicle1" value="something" >Maths
+      </label>
+    </div>
+    <div class="form-check-inline col-sm-4">
+      <label class="form-check-label" for="check2">
+        <input type="checkbox" class="form-check-input" id="check2" name="vehicle2" value="something" >English
+      </label>
+    </div>
+    <div class="form-check-inline col-sm-4">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="vehicle3" value="something">Chemistry
+      </label>
+    </div>
+    <div class="form-check-inline col-sm-4">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="vehicle3" value="something">Biology
+      </label>
+    </div>
+    <div class="form-check-inline col-sm-4">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="vehicle3" value="something">Physics
+      </label>
+    </div>
+    <div class="form-check-inline col-sm-4">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" name="vehicle3" value="something">Animal husbandary
+      </label>
+    </div>
+    <br><br>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<br><br>
+
+
+</body>
+</html>
